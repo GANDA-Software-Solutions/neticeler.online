@@ -16,6 +16,7 @@ services:
 
   web:
     build: .
+    image: ${WEB_IMAGE:-results-web}
     ports:
       - "8000:8000"
     environment:
