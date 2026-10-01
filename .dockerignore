@@ -1,0 +1,11 @@
+.git
+.claude
+results_onsite
+**/__pycache__
+*.pyc
+db.sqlite3
+media
+staticfiles
+.env
+Dockerfile
+docker-compose.yml
