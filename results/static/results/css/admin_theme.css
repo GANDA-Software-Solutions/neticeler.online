@@ -1,0 +1,169 @@
+/* Soft, flat (no-gradient) admin theme — matches the public site's palette
+   without the accent gradients, kept calm for an admin/back-office context. */
+
+html[data-theme="light"],
+:root {
+    --primary: #8891e0;
+    --secondary: #4b5578;
+    --accent: #8891e0;
+    --primary-fg: #ffffff;
+
+    --body-fg: #1f2937;
+    --body-bg: #f8f9fc;
+    --body-quiet-color: #6b7280;
+    --body-loud-color: #111827;
+
+    --header-color: #374151;
+    --header-branding-color: #7981d9;
+    --header-bg: #eef0fb;
+    --header-link-color: #374151;
+
+    --breadcrumbs-fg: #6b7280;
+    --breadcrumbs-link-fg: #7981d9;
+    --breadcrumbs-bg: #f1f2fa;
+
+    --link-fg: #7981d9;
+    --link-hover-color: #5b64c9;
+    --link-selected-fg: #7981d9;
+
+    --hairline-color: #e8eaf2;
+    --border-color: #dfe2ee;
+
+    --error-fg: #c94b47;
+
+    --message-success-bg: #e6f7ec;
+    --message-warning-bg: #fdf3d9;
+    --message-error-bg: #fbeaea;
+
+    --darkened-bg: #f1f2f8;
+    --selected-bg: #eceefa;
+    --selected-row: #fdf3d9;
+
+    --button-fg: #ffffff;
+    --button-bg: #8891e0;
+    --button-hover-bg: #7078d0;
+    --default-button-bg: #4b5578;
+    --default-button-hover-bg: #3a4260;
+    --close-button-bg: #9aa0b4;
+    --close-button-hover-bg: #7c8296;
+    --delete-button-bg: #c9433f;
+    --delete-button-hover-bg: #b23834;
+
+    --object-tools-bg: #8891e0;
+    --object-tools-hover-bg: #7078d0;
+
+    --font-family-primary:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        system-ui,
+        Roboto,
+        Arial,
+        sans-serif;
+}
+
+html[data-theme="dark"] {
+    --primary: #4b5578;
+    --primary-fg: #f3f4f6;
+
+    --body-fg: #e5e7eb;
+    --body-bg: #14151f;
+    --body-quiet-color: #a1a7bb;
+    --body-loud-color: #f9fafb;
+
+    --header-color: #dfe2f0;
+    --header-bg: #1c1e2b;
+    --header-link-color: #dfe2f0;
+
+    --breadcrumbs-link-fg: #a5abd6;
+    --breadcrumbs-bg: #1c1e2b;
+
+    --link-fg: #9aa2e8;
+    --link-hover-color: #b9bff0;
+    --link-selected-fg: #9aa2e8;
+
+    --hairline-color: #262838;
+    --border-color: #2e3142;
+
+    --darkened-bg: #1a1c28;
+    --selected-bg: #20223a;
+    --selected-row: #2a2410;
+
+    --button-bg: #8891e0;
+    --button-hover-bg: #9ba2e6;
+}
+
+/* Soft surfaces + gentle rounding, no gradients anywhere */
+body {
+    font-family: var(--font-family-primary);
+}
+
+#header {
+    box-shadow: 0 1px 0 var(--hairline-color);
+}
+
+#branding h1#site-name a {
+    font-weight: 700;
+}
+
+.module,
+.dashboard .module,
+#content .module {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+    border-radius: 0;
+    font-weight: 600;
+    color: var(--primary-fg);
+}
+
+#content-related .module {
+    box-shadow: none;
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.15s ease;
+}
+
+.object-tools a {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+div.breadcrumbs {
+    border-radius: 0;
+}
+
+.selector-chosen h2,
+.selector-available h2 {
+    border-radius: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    border-radius: 8px;
+    border-color: var(--border-color);
+}
+
+.paginator a:link,
+.paginator a:visited {
+    border-radius: 6px;
+}

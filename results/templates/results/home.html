@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4f46e5">
+    <title>Sınaq Nəticələri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light;
+            --bg-1: #f3f5fb;
+            --card-bg: rgba(255,255,255,0.86);
+            --card-border: rgba(255,255,255,0.8);
+            --text: #1e2433;
+            --text-muted: #64748b;
+            --grad-1: #6366f1;
+            --grad-2: #06b6d4;
+            --input-bg: #ffffff;
+            --input-border: #d8dee9;
+            --danger-bg: #fef2f2;
+            --danger-border: #fecaca;
+            --danger-text: #b91c1c;
+            --shadow: 0 20px 45px -14px rgba(79,70,229,0.16);
+            --icon-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3Cg id='p' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 13 L10 4 L13 7 L4 16 Z'/%3E%3Cpath d='M10 4 L12 2 L15 5 L13 7'/%3E%3Cpath d='M1 13 L0 16 L4 16'/%3E%3C/g%3E%3Cg id='b' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0 2 C3 0 7 0 9 2 L9 13 C7 11 3 11 0 13 Z'/%3E%3Cpath d='M9 2 C11 0 15 0 18 2 L18 13 C15 11 11 11 9 13 Z'/%3E%3C/g%3E%3Cg id='c' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='7' cy='7' r='7'/%3E%3Cpath d='M4 7 L6 9.5 L11 4'/%3E%3C/g%3E%3Cg id='g' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0 4 L11 0 L22 4 L11 8 Z'/%3E%3Cpath d='M4 6 L4 11 C4 13 18 13 18 11 L18 6'/%3E%3C/g%3E%3C/defs%3E%3Cg fill='none' stroke='%23c9cded' stroke-width='1.3'%3E%3Cuse href='%23p' transform='translate(6,3) rotate(-20) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(30,10) rotate(14) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(67,4) rotate(-8) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(92,9) rotate(19) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(1,38) rotate(-15) scale(0.65)'/%3E%3Cuse href='%23p' transform='translate(38,33) rotate(22) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(62,40) rotate(-10) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(97,34) rotate(8) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(6,62) rotate(16) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(31,69) rotate(-6) scale(0.65)'/%3E%3Cuse href='%23p' transform='translate(68,64) rotate(-24) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(90,68) rotate(11) scale(0.65)'/%3E%3Cuse href='%23p' transform='translate(2,99) rotate(9) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(37,93) rotate(-19) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(61,100) rotate(6) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(96,92) rotate(-13) scale(0.65)'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                color-scheme: dark;
+                --bg-1: #0f1425;
+                --card-bg: rgba(30,41,59,0.72);
+                --card-border: rgba(255,255,255,0.08);
+                --text: #e5e9f2;
+                --text-muted: #93a0b7;
+                --input-bg: rgba(15,23,42,0.55);
+                --input-border: #33415580;
+                --danger-bg: rgba(127,29,29,0.28);
+                --danger-border: #7f1d1d;
+                --danger-text: #fca5a5;
+                --shadow: 0 20px 45px -14px rgba(0,0,0,0.55);
+                --icon-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3Cg id='p' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 13 L10 4 L13 7 L4 16 Z'/%3E%3Cpath d='M10 4 L12 2 L15 5 L13 7'/%3E%3Cpath d='M1 13 L0 16 L4 16'/%3E%3C/g%3E%3Cg id='b' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0 2 C3 0 7 0 9 2 L9 13 C7 11 3 11 0 13 Z'/%3E%3Cpath d='M9 2 C11 0 15 0 18 2 L18 13 C15 11 11 11 9 13 Z'/%3E%3C/g%3E%3Cg id='c' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='7' cy='7' r='7'/%3E%3Cpath d='M4 7 L6 9.5 L11 4'/%3E%3C/g%3E%3Cg id='g' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0 4 L11 0 L22 4 L11 8 Z'/%3E%3Cpath d='M4 6 L4 11 C4 13 18 13 18 11 L18 6'/%3E%3C/g%3E%3C/defs%3E%3Cg fill='none' stroke='%231e2846' stroke-width='1.3'%3E%3Cuse href='%23p' transform='translate(6,3) rotate(-20) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(30,10) rotate(14) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(67,4) rotate(-8) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(92,9) rotate(19) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(1,38) rotate(-15) scale(0.65)'/%3E%3Cuse href='%23p' transform='translate(38,33) rotate(22) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(62,40) rotate(-10) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(97,34) rotate(8) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(6,62) rotate(16) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(31,69) rotate(-6) scale(0.65)'/%3E%3Cuse href='%23p' transform='translate(68,64) rotate(-24) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(90,68) rotate(11) scale(0.65)'/%3E%3Cuse href='%23p' transform='translate(2,99) rotate(9) scale(0.65)'/%3E%3Cuse href='%23g' transform='translate(37,93) rotate(-19) scale(0.65)'/%3E%3Cuse href='%23b' transform='translate(61,100) rotate(6) scale(0.65)'/%3E%3Cuse href='%23c' transform='translate(96,92) rotate(-13) scale(0.65)'/%3E%3C/g%3E%3C/svg%3E");
+            }
+        }
+        * { box-sizing: border-box; }
+        html, body { height: 100%; }
+        body {
+            margin: 0;
+            font-family: "Inter", -apple-system, "Segoe UI", Arial, sans-serif;
+            background: var(--bg-1);
+            color: var(--text);
+            position: relative;
+            overflow-x: hidden;
+        }
+        @keyframes cardIn {
+            from { opacity: 0; transform: translateY(18px) scale(.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes shake {
+            10%,90% { transform: translateX(-1px); }
+            20%,80% { transform: translateX(2px); }
+            30%,50%,70% { transform: translateX(-3px); }
+            40%,60% { transform: translateX(3px); }
+        }
+
+        /* --- Search card --- */
+        .search-wrap {
+            position: relative;
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background-color: var(--bg-1);
+            overflow: hidden;
+        }
+        .search-wrap::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: var(--icon-pattern);
+            background-repeat: repeat;
+            background-size: 120px 120px;
+            filter: blur(1px);
+            z-index: 0;
+        }
+        .card {
+            position: relative;
+            z-index: 1;
+            background: var(--card-bg);
+            backdrop-filter: blur(22px) saturate(180%);
+            -webkit-backdrop-filter: blur(22px) saturate(180%);
+            border: 1px solid var(--card-border);
+            border-radius: 22px;
+            box-shadow: var(--shadow);
+            padding: 44px 40px;
+            width: 100%;
+            max-width: 440px;
+            animation: cardIn .5s cubic-bezier(.16,1,.3,1);
+        }
+        .logo-badge {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 18px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--grad-1), var(--grad-2));
+            box-shadow: 0 10px 24px -8px rgba(99,102,241,.55);
+        }
+        .logo-badge svg { width: 28px; height: 28px; color: #fff; }
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 6px;
+            text-align: center;
+            color: var(--text);
+        }
+        p.subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin: 0 0 28px;
+            font-size: 14px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .field-label {
+            font-size: 12.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            color: var(--text-muted);
+            margin-top: 16px;
+        }
+        .field-label:first-child { margin-top: 0; }
+        .search-row {
+            display: flex;
+            gap: 10px;
+        }
+        .field-group {
+            position: relative;
+            flex: 1;
+            min-width: 0;
+        }
+        .field-group .icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px 14px 12px 42px;
+            border: 1px solid var(--input-border);
+            border-radius: 12px;
+            font-size: 16px;
+            min-height: 46px;
+            background: var(--input-bg);
+            color: var(--text);
+            font-family: inherit;
+            transition: border-color .15s ease, box-shadow .15s ease;
+        }
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding-right: 40px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            background-size: 16px;
+        }
+        input[type="text"]::placeholder { color: var(--text-muted); }
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--grad-1);
+            box-shadow: 0 0 0 4px color-mix(in srgb, var(--grad-1) 18%, transparent);
+        }
+        button[type="submit"] {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 22px;
+            background: linear-gradient(135deg, var(--grad-1), var(--grad-2));
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: inherit;
+            min-height: 46px;
+            cursor: pointer;
+            box-shadow: 0 10px 22px -8px rgba(99,102,241,.6);
+            transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+        }
+        button[type="submit"]:hover { transform: translateY(-2px); filter: brightness(1.05); box-shadow: 0 14px 28px -8px rgba(99,102,241,.7); }
+        button[type="submit"]:active { transform: translateY(0); }
+        button[type="submit"] svg { width: 17px; height: 17px; }
+        .errorlist {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0 0;
+            color: var(--danger-text);
+            font-size: 13px;
+        }
+        .result-box {
+            margin-top: 22px;
+            padding: 16px;
+            border-radius: 14px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            animation: shake .4s ease;
+        }
+        .result-box svg { width: 20px; height: 20px; flex-shrink: 0; margin-top: 1px; }
+        .result-box.not-found {
+            background: var(--danger-bg);
+            border: 1px solid var(--danger-border);
+            color: var(--danger-text);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* --- Full-page PDF viewer state --- */
+        .viewer {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: var(--bg-1);
+        }
+        .viewer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 14px 20px;
+            background: var(--card-bg);
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            border-bottom: 1px solid var(--card-border);
+            flex-wrap: wrap;
+            animation: cardIn .4s cubic-bezier(.16,1,.3,1);
+        }
+        .viewer-header .info { display: flex; flex-direction: column; gap: 2px; }
+        .viewer-header .work-number {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .viewer-header .work-number .label {
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        .viewer-header .exam-name {
+            font-size: 12.5px;
+            color: var(--text-muted);
+        }
+        .viewer-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 18px;
+            min-height: 42px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+        }
+        .btn svg { width: 16px; height: 16px; }
+        .btn-primary {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #fff;
+            box-shadow: 0 8px 18px -8px rgba(34,197,94,.55);
+        }
+        .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 12px 22px -8px rgba(34,197,94,.65); }
+        .btn-secondary {
+            background: var(--input-bg);
+            border: 1px solid var(--input-border);
+            color: var(--text);
+        }
+        .btn-secondary:hover { background: color-mix(in srgb, var(--grad-1) 10%, var(--input-bg)); }
+        .pdf-frame {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+
+        @media (max-width: 480px) {
+            .search-wrap { padding: 16px; }
+            .card { padding: 30px 22px; }
+        }
+    </style>
+</head>
+<body>
+    {% if result %}
+        <div class="viewer">
+            <div class="viewer-header">
+                <div class="info">
+                    <div class="work-number">
+                        <span class="label">İş nömrəsi</span>
+                        {{ result.work_number }}
+                    </div>
+                    <div class="exam-name">{{ result.exam.name }} · {{ result.exam.date|date:"d.m.Y" }}</div>
+                </div>
+                <div class="viewer-actions">
+                    <a class="btn btn-primary" href="{% url 'results:download' result.pk %}">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+                        Yüklə
+                    </a>
+                    <a class="btn btn-secondary" href="{% url 'results:home' %}">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        Geri
+                    </a>
+                </div>
+            </div>
+            <iframe class="pdf-frame" src="{% url 'results:view' result.pk %}" title="Sınaq nəticəsi PDF"></iframe>
+        </div>
+    {% else %}
+        <div class="search-wrap">
+            <div class="card">
+                <div class="logo-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>
+                </div>
+                <h1>Sınaq Nəticələri</h1>
+                <p class="subtitle">Nəticənizi görmək üçün iş nömrənizi daxil edin</p>
+
+                <form method="get">
+                    <label class="field-label" for="{{ form.exam.id_for_label }}">1. Sınaq</label>
+                    <div class="field-group">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+                        {{ form.exam }}
+                    </div>
+                    {% if form.exam.errors %}
+                        <ul class="errorlist">
+                            {% for error in form.exam.errors %}<li>{{ error }}</li>{% endfor %}
+                        </ul>
+                    {% endif %}
+
+                    <label class="field-label" for="{{ form.work_number.id_for_label }}">2. İş nömrəsi</label>
+                    <div class="search-row">
+                        <div class="field-group">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>
+                            {{ form.work_number }}
+                        </div>
+                        <button type="submit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            Axtar
+                        </button>
+                    </div>
+                    {% if form.work_number.errors %}
+                        <ul class="errorlist">
+                            {% for error in form.work_number.errors %}<li>{{ error }}</li>{% endfor %}
+                        </ul>
+                    {% endif %}
+                </form>
+
+                {% if searched and form.is_valid %}
+                    <div class="result-box not-found">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <span>Bu iş nömrəsinə uyğun nəticə tapılmadı. Zəhmət olmasa iş nömrəsini yoxlayıb yenidən cəhd edin.</span>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</body>
+</html>

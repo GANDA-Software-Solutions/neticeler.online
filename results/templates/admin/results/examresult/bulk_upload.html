@@ -1,0 +1,36 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<div id="content-main">
+    <p>Hər PDF faylının adı iş nömrəsi olmalıdır (məs. <code>AZ12345.pdf</code>).
+    Seçilmiş sınaqda eyni iş nömrəsi ilə nəticə artıq mövcuddursa, üzərinə
+    yazılmır — hər iki PDF bir sənəddə birləşdirilir.</p>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-row">
+            {{ form.exam.label_tag }}
+            {{ form.exam }}
+            {% if form.exam.errors %}
+                <ul class="errorlist">
+                    {% for error in form.exam.errors %}<li>{{ error }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="form-row">
+            {{ form.pdf_files.label_tag }}
+            {{ form.pdf_files }}
+            {% if form.pdf_files.errors %}
+                <ul class="errorlist">
+                    {% for error in form.pdf_files.errors %}<li>{{ error }}</li>{% endfor %}
+                </ul>
+            {% endif %}
+            <p class="help">{{ form.pdf_files.help_text }}</p>
+        </div>
+        <div class="submit-row">
+            <input type="submit" value="Yüklə" class="default">
+            <a href="{% url 'admin:results_examresult_changelist' %}" class="button cancel-link">Ləğv et</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
